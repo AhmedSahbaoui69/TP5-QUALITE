@@ -2,14 +2,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Etagere {
-    List<Livre> livres;
+    List<Item> items;
 
     public Etagere() {
-        livres = new ArrayList<>();
+        items = new ArrayList<>();
     }
 
-    void ajouterLivre(Livre livre) {
-        livres.add(livre);
+    void ajouterItem(Item item) {
+        items.add(item);
     }
 
     void personnaliserEtagere() {

@@ -1,15 +1,17 @@
-class Livre {
+class Livre implements Item {
     private String titre;
 
     public Livre(String titre) {
         this.titre = titre;
     }
 
-    void voirAvis() {
+    @Override
+    public void voirAvis() {
         System.out.println("Consultant les avis sur le livre");
     }
 
-    void lireExtrait() {
+    @Override
+    public void lireExtrait() {
         System.out.println("Lisant un extrait du livre");
     }
 }
